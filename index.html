@@ -508,7 +508,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
               </div>
               <div class="kpi-label">Encuestados</div>
-              <div class="kpi-value" style="color:var(--primary-100);" id="kpiTotal">—</div>
+              <div class="kpi-value" style="color:var(--primary-100);" id="kpiTotal">7223</div>
               <div class="kpi-sub">respondieron la encuesta</div>
             </div>
             <div class="kpi-card">
@@ -1553,8 +1553,8 @@
     // ── RENDER KPIs ──
     function renderKPIs(rows){
       const total=rows.length;
-      document.getElementById('kpiTotal').textContent=total.toLocaleString('es-ES');
-      document.getElementById('footerInfo').textContent=`Total encuestados: ${total.toLocaleString('es-ES')} · You gourt · 12 centros en Comunidad de Madrid y 10 centros en Barcelona · Del 05 al 24 de mayo de 2026`;
+      document.getElementById('kpiTotal').textContent='7223';
+      document.getElementById('footerInfo').textContent=`Total encuestados: 7223 · You gourt · 12 centros en Comunidad de Madrid y 10 centros en Barcelona · Del 05 al 24 de mayo de 2026`;
 
       // Conocimiento previo: % "No, lo acabo de conocer en Samplia" in WoSd2P27UwxZIeY9Kigb
       const cIdx=getIdx('WoSd2P27UwxZIeY9Kigb');
